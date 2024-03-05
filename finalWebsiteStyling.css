@@ -1,4 +1,4 @@
-body {background-color: lightgray;color: #666666;
+body {background-color: rgb(226, 226, 226);color: #555555;
     font-family: Arial, Helvetica, sans-serif;}
 h1 {background-color: darkgreen;color: #FFFFFF;
     font-family: Georgia, serif;font-size: 200%;}
@@ -9,3 +9,23 @@ dt {color: #002171;font-weight: bold;}
 footer {font-size: 0.7em;font-style: italic;text-align: center;}
 
 #wrapper {width: 80%;margin-right: auto;margin-left: auto;}
+
+a.internal {color: #393939; text-decoration: none;}
+a.internal:hover {color: #ffffff}
+
+a.external {color: #555555; text-decoration: none;}
+a.external:hover {color: #ffffff}
+
+#army1hero, #army2hero, #army3hero, #army4hero, #army5hero 
+    {width: 400px;height: 200px;background-repeat: no-repeat;
+    background-size: 100% 100%;}
+#army1hero {background-image: url(army1.jpg);}
+#army2hero {background-image: url(army2.jpg);}
+#army3hero {background-image: url(army3.jpg);}
+#army4hero {background-image: url(army4.jpg);}
+#army5hero {background-image: url(army5.jpg);}
+
+#important {color: red;font-weight: bold;}
+
+#authorhero {width: 150px;height: 200px;background-repeat: no-repeat;
+    background-size: 100% 100%;background-image: url(authorPic.jpg)}
