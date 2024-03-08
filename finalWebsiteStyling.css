@@ -1,31 +1,63 @@
 body {background-color: rgb(226, 226, 226);color: #555555;
     font-family: Arial, Helvetica, sans-serif;}
 h1 {background-color: darkgreen;color: #FFFFFF;
-    font-family: Georgia, serif;font-size: 200%;}
-nav {background-color: lightgreen;font-weight: bold;}
+    font-family: Georgia, serif;font-size: 200%;font-size: 1.5em;}
 h2 {color: olive;font-family: Georgia, serif;font-weight: bold;}
 dt {color: #002171;font-weight: bold;}
 
 footer {font-size: 0.7em;font-style: italic;text-align: center;}
 
+
 #wrapper {width: 80%;margin-right: auto;margin-left: auto;}
 
-a.internal {color: #393939; text-decoration: none;}
-a.internal:hover {color: #ffffff}
-
-a.external {color: #555555; text-decoration: none;}
-a.external:hover {color: #ffffff}
+nav {background-color: lightgreen;font-weight: bold;font-size: 1.2em;text-align: center;}
+a {text-decoration: none;}
+a.internal {color: #393939;}
+a.external {color: #555555;}
+a:hover {color: #ffffff;}
+nav ul {list-style-type: none;padding-left: 1em;display: flex;
+    flex-direction: column;}
+nav li {padding-top: 0.5em;padding-bottom: 0.5em;padding-left: 1em;
+    padding-right: 1em;width: 100%;border-bottom: 1px;}
 
 #army1hero, #army2hero, #army3hero, #army4hero, #army5hero 
     {width: 400px;height: 200px;background-repeat: no-repeat;
     background-size: 100% 100%;}
-#army1hero {background-image: url(army1.jpg);}
-#army2hero {background-image: url(army2.jpg);}
-#army3hero {background-image: url(army3.jpg);}
-#army4hero {background-image: url(army4.jpg);}
-#army5hero {background-image: url(army5.jpg);}
 
 #important {color: red;font-weight: bold;}
 
+#submitButton {background-color: darkgreen;color: #ffffff;}
+#submitButton:hover {background-color: lightgreen;color: black;}
+
+
+table, th, td {text-align: center;border: 1px #393939 solid;border-collapse: collapse;}
+tr:nth-of-type(even) {background-color: #cbcbcb;}
+
 #authorhero {width: 150px;height: 200px;background-repeat: no-repeat;
     background-size: 100% 100%;background-image: url(authorPic.jpg)}
+
+/* Medium layout */
+@media only screen and (min-width: 600px) {
+    h1 {font-size: 2em;}
+
+    nav ul {list-style-type: none;padding-right: 2em;display: flex;
+        flex-direction: row;flex-wrap: nowrap;
+        justify-content: space-around;}
+    nav li {width: 12em;border-bottom: none;}
+
+    section {padding-left: 2em;padding-right: 2em;}
+
+    #mobile {display: none;}
+    #desktop {display: inline;}
+
+    form {display: grid;gap: 1em;width: 60%;
+        grid-template-columns: 10em 1fr;}
+    #mySubmit {grid-column: 2 / 3;}
+}
+
+/* Large layout */
+@media only screen and (min-width: 1024px) {
+    nav ul {padding-left: 10%;padding-right: 10%;}
+
+    #wrapper {margin: auto;width: 80%;}
+}
